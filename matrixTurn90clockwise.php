@@ -7,7 +7,7 @@ function transp(array $m): array {
 	
     for($i = 0; $i < $cols; $i ++) {
         for($j = 0; $j < $rows; $j ++) {
-            $out[$rows - $i - 1][$j] = $m[$rows - $j - 1][$i];
+            $out[$i][$j] = $m[$rows - $j - 1][$i];
         }	
     }
     return $out; 	
